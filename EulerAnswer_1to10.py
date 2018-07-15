@@ -53,11 +53,11 @@ def EulerQuestionPt1(question):
                 ans = ans/2
         
         if ans>2 and p == 0:
-            while f < ans:
-                p=ans%f
-                if p ==0:
-                    ans = ans/f
-                else:
-                    f=f+2
-        
+            while f * f <= ans:
+                if ans == f*f:
+                    ans =f
+                    break
+                while ans % f == 0:
+                    ans = ans / f
+                f = f + 2
         return int(ans)
