@@ -1,7 +1,7 @@
 import sys
 from EulerAnswer import EulerQuestion
 
-print('Select Question (Enter Question number betweeb 1 to 2)')
+print('Select Question (Enter Question number betweeb 1 to 3)')
 
 question=int(input().strip())
 
